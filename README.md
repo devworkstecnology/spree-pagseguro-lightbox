@@ -1,10 +1,7 @@
-# Spree PagSeguroSimple
-
-[![Code Climate](https://codeclimate.com/github/locomotivapro/spree_pagseguro_simple/badges/gpa.svg)](https://codeclimate.com/github/locomotivapro/spree_pagseguro_simple)
-[![Gem Version](https://badge.fury.io/rb/spree_pagseguro_simple.svg)](http://badge.fury.io/rb/spree_pagseguro_simple)
+# Spree PagSeguroLightbox
 
 Add support for Pagseguro checkout as a payment method.
-__Only tested on Spree 3.0__
+__Tested on Spree 4.1.1__
 
 This gem approach takes in consideration that a incomplete order with an approved PagSeguro transaction is unacceptable. So the user will complete the order process and then will be guided to PagSeguro to pay.
 
@@ -24,8 +21,7 @@ This gem approach takes in consideration that a incomplete order with an approve
 
 2. Click `Create`, and enter your Store's Pagseguro Email and Token in the fields provided.
 
-3. By default sandbox env is activated. To allow production env you
-   shoud define ENV['PAGSEGURO_ENV'].
+3. Define ENV['PAGSEGURO_ENV'] with 'sandbox' or 'production'.
 
 4. `Save` and enjoy!
 
@@ -51,6 +47,4 @@ Be sure to add the rspec-rails gem to your Gemfile and then create a dummy test 
 Disclaimer
 ----------
 
-This gem is inspired by [João Netto gem](https://github.com/jnettome/spree_pagseguro) but updated to spree 3 and using a new approach to checkout flow.
-
-Copyright (c) 2013-2015 [Locomotiva.pro](http://locomotiva.pro), released under the New BSD License
+This gem is inspired by [Locomotiva gem](https://github.com/locomotivapro/spree_pagseguro_simple) but updated to spree 4 and using checkout lightbox.
